@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 /*COMMON*/
 
 #app-wrapper{
@@ -14,14 +18,22 @@
     background-color: coral;
 }
 
+img{
+    width: 100%;
+}
+
+.padding-top-nav{
+    padding-top: 8px;
+}
+
 
 
 /*MAIN*/
 main{
     height: calc( 100% - 70px );
-    background-color: gray;
 }
 
+/*nav*/
 nav{
     float: left;
     width: 200px;
@@ -29,8 +41,52 @@ nav{
     overflow: hidden;
     background-color: black;
     color: lightgray;
+    padding-left: 10px ;
 }
 
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo{
+    width: 80%;
+    height: 80px;
+    padding: 15px 0;
+}
+
+.main-links{
+    background-color: palevioletred;
+}
+
+.playlist{
+    height: 100%;
+    overflow-y: auto;
+}
+
+.playlist-container{
+    background-color: coral;
+    height: 100%;
+    min-height: 100px;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.user{
+    background-color: purple;
+}
+
+.nav-container li{
+    padding: 8px 0;
+}
+
+.nav-container a{
+    color: lightgray;
+    text-decoration: none;
+}
+
+/*main-content*/
 .main-content{
     float: left;
     width: calc( 100% - 200px );

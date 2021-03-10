@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
-
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -19,34 +20,53 @@
             <!--nav-->
             <nav>
                 <div class="nav-container">
-
+                    
+                    <!--logo-->
                     <img class="logo" src="img/logo.svg" alt="logo">
 
+                    <!--main links-->
                     <div class="main-links padding-top-nav">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#">
+                                    <img class="logo-list" src="img/home.svg" alt="home-logo">
+                                    <span>Home</span>
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#">cerca</a>
+                                <a href="#">
+                                    <img class="logo-list" src="img/search.svg" alt="search-logo">
+                                    <span>Cerca</span>
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#">La tua libreria</a>
+                                <a href="#">
+                                    <img class="logo-list" src="img/libreria.svg" alt="library-logo">
+                                    <span>La tua libreria</span>
+                                </a>
                             </li>
                         </ul>
                     </div>
 
+                    <!--playlist container-->
                     <div class="playlist-container padding-top-nav">
 
-                        <h2>Crea Playlist</h2>
+                        <h2>Playlist</h2>
 
                         <div class="playlist">
 
                             <ul>
                                 <li>
-                                    <a href="#">Nome Playlist</a>
+                                    <a href="#">
+                                        <div class="crea-playlist">
+                                            <span class="box-plus">
+                                                <i class="fas fa-plus"></i>
+                                            </span>
+                                            <span class="text-plus"> <strong>Crea Playlist</strong> </span>
+                                        </div>
+                                    </a>
                                 </li>
     
                                 <li>
@@ -76,11 +96,23 @@
                         </div>
                        
                     </div>
-
+                    
+                    <!--user-->
                     <div class="user">
 
-                        <div>Installa app</div>
-                        <div>John Doe</div>
+                        <div class="install">
+                            <a href="#">
+                                <img class="logo-list" src="img/download.svg" alt="download">
+                                <span>Installa app</span>
+                            </a>
+                        </div>
+                        <div class="username">
+                            <a href="#">
+                                <span class="box-plus"></span>
+                                
+                                <span> <strong>John Doe</strong> </span>
+                            </a>
+                        </div>
 
                     </div>
                 </div>

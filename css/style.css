@@ -23,9 +23,8 @@ img{
 }
 
 .padding-top-nav{
-    padding-top: 8px;
+    padding-top: 6px;
 }
-
 
 
 /*MAIN*/
@@ -40,8 +39,9 @@ nav{
     height: 100%;
     overflow: hidden;
     background-color: black;
-    color: lightgray;
-    padding-left: 10px ;
+    color: #919496;
+    padding-left: 10px;
+    font-size: 13px;
 }
 
 .nav-container{
@@ -56,9 +56,7 @@ nav{
     padding: 15px 0;
 }
 
-.main-links{
-    background-color: palevioletred;
-}
+/*playlist*/
 
 .playlist{
     height: 100%;
@@ -66,24 +64,88 @@ nav{
 }
 
 .playlist-container{
-    background-color: coral;
     height: 100%;
     min-height: 100px;
     flex-grow: 1;
     overflow: hidden;
 }
 
-.user{
-    background-color: purple;
+.playlist-container h2{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
 }
 
 .nav-container li{
     padding: 8px 0;
+
 }
 
 .nav-container a{
-    color: lightgray;
+    color: #919496;
     text-decoration: none;
+    display: inline-block;
+}
+
+.logo-list{
+    width: 23px;
+}
+
+.nav-container a span{
+    vertical-align: 35%;
+}
+
+.box-plus{
+    width: 35px;
+    height: 35px;
+    font-size: 15px;
+    padding: 8px;
+    background-color: #919496;
+    color: black;
+    border-radius: 3px;
+    margin-right: 7px;
+    display: inline-block;
+    text-align: center;
+   
+}
+
+.crea-playlist{
+    margin-top: 7px;
+}
+
+.text-plus{
+    font-size: 15px;
+}
+
+/*user*/
+
+.user{
+    height: 120px;
+}
+
+.install{
+    border-bottom: 1px solid #919496;
+    padding: 6px 0;
+    font-size: 13px;
+}
+
+.username{
+    padding: 6px 0;
+}
+
+.username span{
+    color: white;
+}
+
+.install .logo-list{
+    width: 15px;
+}
+
+.username .box-plus{
+    border-radius: 50%;
+    vertical-align: -25%;
+    background-image: url(../img/profile.svg);
+    background-size: cover;
 }
 
 /*main-content*/

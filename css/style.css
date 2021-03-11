@@ -316,8 +316,7 @@ footer{
     display: flex;
     flex-direction: column;
     height: 80%;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .console-btn{
@@ -353,12 +352,43 @@ footer{
 }
 
 .bar-progress{
-    width: 120px;
+    width: 100px;
     height: 4px;
     background-color: white;
     border-radius: 3px;
 }
 
+/*settings-container*/
+.settings-container{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings-container a{
+    text-decoration: none;
+}
+
+.settings-btn{
+    flex-shrink: 0;
+}
+
+.bar-settings{
+    width: 100px;
+    height: 3px;
+    background-color: #919496;
+    margin: 0 10px;
+    border-radius: 3px;
+}
+
+.bar-settings-progress{
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
 
 /*FINE FOOTER*/
 

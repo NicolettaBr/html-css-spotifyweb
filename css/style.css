@@ -26,6 +26,10 @@ img{
     padding-top: 6px;
 }
 
+h2{
+    color: white;
+    margin: 15px 0;
+}
 
 /*MAIN*/
 main{
@@ -70,7 +74,7 @@ nav{
     overflow: hidden;
 }
 
-.playlist-container h2{
+.playlist-container h3{
     text-transform: uppercase;
     font-size: 18px;
     color: white;
@@ -227,6 +231,7 @@ nav{
     background-color: #161629;
 }
 
+/*options*/
 .options-container{
     padding-top: 100px;
     text-align: center;
@@ -251,6 +256,7 @@ nav{
     text-transform: uppercase;
     font-size: 12px;
     margin-bottom: 30px;
+    padding: 0 10px;
 }
 
 .options-container a{
@@ -260,10 +266,28 @@ nav{
 
 .options-container a:hover{
     border-bottom: 2px solid yellowgreen;
-    
 }
 
+/*recently*/
 
+.recently-container{
+    width: 100%;
+    margin: auto;
+}
+
+.container-albums::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.albums{
+    max-width: calc( 100% / 6);
+}
+
+.col_inner{
+    padding: 10px 10px 10px 0;
+}
 
 /*FINE MAIN*/
 
@@ -458,10 +482,15 @@ footer{
 @media screen and (max-width:767px){
     .main-content{
         width: calc( 100% - 50px );
+       
     } 
 
     .options{
        min-width: calc( 100% / 4 );
+    }
+
+    .albums{
+        max-width: calc( 100% / 2);
     }
 }
 
@@ -469,21 +498,33 @@ footer{
 @media screen and (min-width:768px) and (max-width:991px){
     .options{
         min-width: calc( 100% / 3 );
-     }
+    }
+
+    .albums{
+        max-width: calc( 100% / 2);
+    }
 }
 
 /*md*/
 @media screen and (min-width:992px) and (max-width:1199px){
     .options{
         min-width: calc( 100% / 4 );
-     }
+    }
+
+    .albums{
+        max-width: calc( 100% / 4);
+    }
 }
 
-/*lg*/
+/*lg - non necessaria, già messa nel generico*/
 @media screen and (min-width:1200px){
     .options{
         min-width: calc( 100% / 6 );
-     }
+    }
+
+    .albums{
+        max-width: calc( 100% / 6);
+    }
 }
 
 

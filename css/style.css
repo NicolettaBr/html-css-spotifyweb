@@ -31,6 +31,8 @@ h2{
     margin: 15px 0;
 }
 
+
+
 /*MAIN*/
 main{
     height: calc( 100% - 70px );
@@ -283,10 +285,20 @@ nav{
 
 .albums{
     max-width: calc( 100% / 6);
+    padding-bottom: 40px;
 }
 
 .col_inner{
     padding: 10px 10px 10px 0;
+}
+
+.albums-content{
+    text-align: center;
+}
+.title{
+    color: white;
+    font-size: 15px;
+    padding: 7px 0;
 }
 
 /*FINE MAIN*/

@@ -118,10 +118,6 @@ nav{
 
 /*user*/
 
-.user{
-    height: 120px;
-}
-
 .install{
     border-bottom: 1px solid #919496;
     padding: 6px 0;
@@ -209,23 +205,15 @@ nav{
         text-align: center;
     }
 
-    .main-content{
-        float: left;
-        width: calc( 100% - 50px );
-        height: 100%;
-        overflow-y: auto;
-        background-color: indianred;
+    .nav-xs-container .main-links{
+      flex-grow: 1;
     }
-    
 
-
-
-    
-  
 }
 
 
 /*main-content*/
+
 .main-content{
     float: left;
     width: calc( 100% - 200px );
@@ -234,6 +222,14 @@ nav{
     background-color: indianred;
 }
 
+
+
+
+@media screen and (max-width:767px){
+    .main-content{
+        width: calc( 100% - 50px );
+    } 
+}
 
 
 
@@ -252,11 +248,67 @@ footer{
     height: 70px;
     overflow: hidden;
     background-color: #353536;
+    /*test*/
+    color: #919496;
 }
 
 .footer-container{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  
+}
+
+.brano-container{
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*song-info*/
+.song-info{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.song-info img{
+    width: 45px;
+    height: auto;
+    padding: 0 5px;
+    
+}
+
+.song-info .name-song{
+    font-size: 10px;
+}
+
+/*reactions*/
+.reactions{
+    display: flex;
+    
+}
+
+.song-info h5{
+    color: white;
+}
+
+.reactions a{
+    color: #919496;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:991px){
+    .reactions{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -288,5 +340,10 @@ footer{
     border-radius: 20px;
 }
 
-
+@media screen and (max-width:767px){
+    .upgrade{
+        width: calc( 100% - 50px);
+    }
+    
+}
 

@@ -307,24 +307,27 @@ nav{
 }
 
 
-.image-album:hover .overlay{
+.overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 50%;
-
+    visibility: hidden;
 }
 
-.overlay:hover .text-overlay{
+.text-overlay{
     color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
+    font-size: 40px;
+}
+
+.image-album:hover .overlay{
+    visibility: visible;
 }
 
 

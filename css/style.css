@@ -277,15 +277,14 @@ nav{
     margin: auto;
 }
 
-.container-albums::after{
-    content: "";
-    display: table;
-    clear: both;
+.container-albums{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .albums{
     max-width: calc( 100% / 6);
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .col_inner{

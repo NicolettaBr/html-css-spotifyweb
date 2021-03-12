@@ -298,7 +298,7 @@ nav{
 
 .image-album{
     position: relative;
-    height: 168px;
+    height: 100%;
 }
 
 .image-album img{

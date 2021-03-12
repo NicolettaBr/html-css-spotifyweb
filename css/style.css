@@ -217,7 +217,6 @@ nav{
 
 }
 
-
 /*main-content*/
 
 .padding-main{
@@ -246,9 +245,6 @@ nav{
     
 }
 
-[class*=col-]{
-    float: left;
-}
 
 .options{
     min-width: calc( 100% / 6 );

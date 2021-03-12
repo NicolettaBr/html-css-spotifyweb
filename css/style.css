@@ -301,7 +301,8 @@ nav{
     height: 100%;
 }
 
-.image-album img{
+.image-album img,
+.img-album img{
     height: 100%;
     object-fit: cover;
 }
@@ -326,10 +327,14 @@ nav{
     font-size: 40px;
 }
 
-.image-album:hover .overlay{
+.image-album:hover .overlay,
+.img-album:hover .overlay{
     visibility: visible;
 }
 
+.img-album:hover .overlay{
+    border-radius: 50%;
+}
 
 .title{
     color: white;
@@ -348,6 +353,11 @@ nav{
 /*most-popolar*/
 .most-popolar{
     width: 100%;
+}
+
+.img-album{
+    position: relative;
+    height: 100%;
 }
 
 .img-album img{

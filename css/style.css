@@ -239,13 +239,10 @@ nav{
     text-align: center;
     width: 70%;
     margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
-}
-
-.options-container::after{
-    content: "";
-    display: table;
-    clear: both;
 }
 
 [class*=col-]{
@@ -269,6 +266,7 @@ nav{
 .options-container a:hover{
     border-bottom: 2px solid yellowgreen;
 }
+
 
 /*recently*/
 
@@ -298,6 +296,14 @@ nav{
     color: white;
     font-size: 15px;
     padding: 7px 0;
+}
+
+.subtitle{
+    padding-bottom: 18px;
+}
+/*create-for*/
+.created-for{
+    width: 100%;
 }
 
 /*FINE MAIN*/
